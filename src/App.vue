@@ -1,4 +1,6 @@
-<script>
+<script setup>
+
+
 
 </script>
 
@@ -13,9 +15,12 @@
         <div class="links">
           <!-- use <RouterLink></RouterLink> instead <a></a> to save for each pagand not refreshe -->
           <RouterLink active-class=" active" class="page_link p-2 rounded-pill" to="/">Home</RouterLink>
-          <RouterLink active-class=" active" class="page_link p-2 rounded-pill" to="/documentation">Documentation</RouterLink>
+          <RouterLink active-class=" active" class="page_link p-2 rounded-pill" to="/documentation">Documentation
+          </RouterLink>
           <RouterLink active-class=" active" class="page_link p-2 rounded-pill" to="/projects">Projects</RouterLink>
         </div>
+
+        
 
       </div>
 
