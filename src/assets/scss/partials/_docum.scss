@@ -1,0 +1,85 @@
+@use "./_variables.scss" as *;
+
+#docum {
+
+    font-family: monospace;
+
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+
+
+    header .card {
+        background-color: rgb(255, 255, 107);
+    }
+
+    .card {
+        background-color: #27272a;
+    }
+
+    .sty_bt {
+        color: #27272a;
+        background-color: rgb(255, 191, 0);
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        animation: pulsate 2s infinite ease-in-out;
+        /*     transition: background-color 0.3s ease, color 0.3s ease; */
+    }
+
+    @keyframes pulsate {
+        0% {
+            transform: scale(1);
+            /* Stato normale */
+        }
+
+        50% {
+            transform: scale(1.05);
+            /* Stato ingrandito */
+        }
+
+        100% {
+            transform: scale(1);
+            /* Ritorna allo stato normale */
+        }
+    }
+
+    .sty_bt:hover {
+        color: rgb(0, 4, 255);
+        background-color: #88ff00;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+
+
+    code {
+        background: rgb(255, 191, 0);
+        color: rgb(79, 79, 79);
+        border-radius: 5px;
+        padding: 5px;
+    }
+
+    code.code_txt {
+        background: #4f4f4f61;
+        color: rgb(255, 214, 90);
+        border-radius: 5px;
+        padding: 5px;
+    }
+
+    .pannel_code {
+        background: #4f4f4f61;
+        padding: 20px 30px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        border-radius: 10px;
+    }
+
+    footer {
+        background-color: rgb(24, 24, 24);
+        height: auto;
+
+    }
+
+}

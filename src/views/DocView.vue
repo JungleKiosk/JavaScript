@@ -1,19 +1,25 @@
+<script>
+import Documentation from "../components/Documentation.vue"; // Sostituisci con il percorso corretto del tuo componente
 
-<script setup>
+
+export default {
+    data() {
+
+    },
+    components: {
+        Documentation
+    }
+}
 
 
 </script>
 
+
+
 <template>
 
-    <div class="container">
-        <div class="row">
-            <div class="h1">Hallo Doc!</div>
-        </div>
-    </div>
- 
+    <Documentation></Documentation>
+
 </template>
 
-<style>
-
-</style>
+<style scoped></style>

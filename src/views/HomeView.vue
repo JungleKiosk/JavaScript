@@ -11,10 +11,11 @@ const cars = ref(carsData);
     <div class="sidebar">
         <h1>Hallo!</h1>
         <div class="scrollbar">
-            <div class="cards">
+            <div class="card">
+                
                 <RouterLink :to="`/car/${car.id}`" v-for="car in cars" class="card">
                     <p>{{ car.title }}</p>
-                    <p>{{ car.title1 }}</p>
+                    <p>{{ car.id }}</p>
                 </RouterLink>
             </div>
         </div>
