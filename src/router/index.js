@@ -4,6 +4,7 @@ import HomeView from "../views/HomeView.vue"
 import DocView from "../views/DocView.vue"
 /* ------------------------------------------------- */
 import ProjectsView from "../views/ProjectsView.vue"
+import CarView from "../views/CarView.vue"
 
 
 const router = createRouter({
@@ -23,6 +24,11 @@ const router = createRouter({
             path: "/projects",
             name: "projects",
             component: ProjectsView
+        },
+        {
+            path: "/car/:id",
+            name: "car",
+            component: CarView
         }
     ]
 })

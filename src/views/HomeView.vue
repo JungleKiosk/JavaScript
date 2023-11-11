@@ -1,23 +1,24 @@
 <script setup>
+import carsData from "../data/data.json";
 import { ref } from "vue";
-import itemsDoc from "../data/itemsDoc.json";
+import {RouterLink}  from "vue-router"
 
-const itemDoc = ref(itemsDoc);
+const cars = ref(carsData);
 
 </script>
 
 <template>
-  <div class="sidebar">
-    <h1>Hallo!</h1>
-    <div class="scrollbar">
-      <div v-for="doc in itemDoc" :key="doc.id" @click="mostraDocumentazione(doc.id)" class="sidebar-item">
-        {{ doc.title }}
-      </div>
+    <div class="sidebar">
+        <h1>Hallo!</h1>
+        <div class="scrollbar">
+            <div class="cards">
+                <RouterLink :to="`/car/${car.id}`" v-for="car in cars" class="card">
+                    <p>{{ car.title }}</p>
+                    <p>{{ car.title1 }}</p>
+                </RouterLink>
+            </div>
+        </div>
     </div>
-  </div>
-
 </template>
 
-<style>
-
-</style>
+<style></style>
