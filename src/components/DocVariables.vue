@@ -1,6 +1,16 @@
 <script>
-
-
+export default {
+    data() {
+        return {
+            isSidebarOpen: false,
+        };
+    },
+    methods: {
+        toggleSidebar() {
+            this.isSidebarOpen = !this.isSidebarOpen;
+        },
+    },
+};
 </script>
 
 <template>
@@ -10,23 +20,45 @@
             <div class="row justify-content-center">
                 <div class="col-12 col-lg-8">
                     <div class="card p-3 d-flex justify-content-between align-items-center">
-                        <img class="rounded-3" width="100" src="./assets/img/js.svg" alt>
+                        <img class="rounded-3" width="100" src="../assets/img/js.svg" alt>
                     </div>
 
                 </div>
             </div>
         </div>
 
+
     </header>
+
+
+
 
     <main id="docum">
 
         <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-12 col-lg-8">
+            <div class="toggle_sidebar_button">
+                menu
+                <button class="btn btn-outline-light" @click="toggleSidebar">+</button>
+            </div>
 
+            <div class="row justify-content-around">
+
+                <nav class="sidebar" :class="{ 'sidebar-open': isSidebarOpen }">
+                    <div>
+                        <h1>menu</h1>
+                    </div>
+                    <ul class="p-3">
+                        <li><a href="#variabili">variabili e costanti</a></li>
+                        <hr>
+                        <li><a href="#">Lorem, ipsum dolor</a></li>
+                        <hr>
+                        <li><a href="#">Lorem, ipsum dolor</a></li>
+                    </ul>
+                </nav>
+
+
+                <div class="col-12 col-lg-8">
                     <br>
-                    <hr>
                     <br>
                     <!-- variabili -->
                     <h2 style="color:rgb(255, 191, 0)">Le variabili</h2>
@@ -71,7 +103,7 @@
                         <h2 class="text-warning text-center p-4 mb-3">🚀 Fai
                             pratica
                             con
-                            <button class="rounded-3 sty_bt"><a
+                            <button class="rounded-5 sty_bt"><a
                                     href="https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_state_let"
                                     target="_blank">W3S</a></button>
 
@@ -143,7 +175,7 @@ console.log(x); // Stampa 20 invece di 10</pre>
                     <div class="card border-1 border-warning m-5 ">
                         <h2 class="text-warning text-center p-4 mb-3">🚀 Fai
                             pratica con
-                            <button class="rounded-3 sty_bt">
+                            <button class="rounded-5 sty_bt">
                                 <a href="https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_state_var"
                                     target="_blank">W3S</a>
                             </button>
@@ -244,7 +276,7 @@ console.log(x); // Stampa 20 invece di 10</pre>
                     <div class="card border-1 border-warning m-5 ">
                         <h2 class="text-warning text-center p-4 mb-3">🚀 Fai
                             pratica con
-                            <button class="rounded-3 sty_bt">
+                            <button class="rounded-5 sty_bt">
                                 <a href="https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_state_const_object"
                                     target="_blank">W3S</a>
 
@@ -263,7 +295,7 @@ console.log(x); // Stampa 20 invece di 10</pre>
             <div class="row justify-content-center">
                 <h4 style="color:rgb(255, 191, 0)" class=" text-center p-4 mb-3">Prova a svolgere degli
                     esercizi di logica JavaScript
-                    <button class="rounded-3 sty_bt">
+                    <button class="rounded-5 sty_bt">
                         <a href="https://www.w3schools.com/js/exercise_js.asp?filename=exercise_js_variables1"
                             target="_blank">W3S</a>
                     </button>
@@ -299,4 +331,40 @@ console.log(x); // Stampa 20 invece di 10</pre>
     </footer>
 </template>
 
-<style></style>
+<style scoped>
+.sidebar ul {
+    list-style-type: none;
+}
+
+.sidebar {
+    width: auto;
+    background-color: #27272a;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: -100%;
+    /* Nasconde la sidebar di default */
+    overflow-y: auto;
+    transition: left 0.3s ease;
+}
+
+.sidebar-open {
+    left: 0;
+    /* Mostra la sidebar quando è aperta */
+}
+
+.main-content {
+    flex: 1;
+    padding-left: 220px;
+    /* Larghezza della sidebar + margine */
+}
+
+.toggle_sidebar_button {
+    font-size: 20px;
+    cursor: pointer;
+    position: sticky;
+    top: 20px;
+    left: 20px;
+    z-index: 2;
+}
+</style>
