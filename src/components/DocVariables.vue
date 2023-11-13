@@ -1,21 +1,17 @@
 <script>
+
+import BannerWs from "../components/BannerWs.vue"
+import BannerFooter from "../components/BannerFooter.vue"
+
+
 export default {
     data() {
-        return {
-            isSidebarOpen: false,
-            neonEffect: false,
-        };
+        
     },
-    methods: {
-        toggleSidebar() {
-            this.isSidebarOpen = !this.isSidebarOpen;
-        },
-    },
-    mounted() {
-        setInterval(() => {
-            this.neonEffect = !this.neonEffect;
-        }, 3000);
-    },
+    components: {
+        BannerWs,
+        BannerFooter
+    }
 };
 </script>
 
@@ -43,27 +39,6 @@ export default {
     <main id="docum">
 
         <div class="container">
-
-            <button class="toggle_sidebar_button btn btn-outline-light" @click="toggleSidebar"
-                :class="{ 'neon-effect': neonEffect }">menu</button>
-
-            <nav class="sidebar" :class="{ 'sidebar-open': isSidebarOpen }">
-                <div class="row align-items-center">
-                    <div class="col-6 col-lg-8">
-                        <h1 class="p-3">menu</h1>
-                    </div>
-                    <div class="col-6 col-lg-4">
-                        <button class="btn btn-outline-light " @click="toggleSidebar">x</button>
-                    </div>
-                </div>
-                <ul class="p-3">
-                    <li><a href="#variabili">variabili e costanti</a></li>
-                    <hr>
-                    <li><a href="#">Lorem, ipsum dolor</a></li>
-                    <hr>
-                    <li><a href="#">Lorem, ipsum dolor</a></li>
-                </ul>
-            </nav>
 
             <div class="row justify-content-around">
 
@@ -110,16 +85,7 @@ export default {
 
                     <pre class="pannel_code">let count = 0; <br>count = count + 1; // Aggiorna il valore di "count"</pre>
 
-                    <div class="card border-1 border-warning m-5 ">
-                        <h2 class="text-warning text-center p-4 mb-3">🚀 Fai
-                            pratica
-                            con
-                            <button class="rounded-5 sty_bt"><a
-                                    href="https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_state_let"
-                                    target="_blank">W3S</a></button>
-
-                        </h2>
-                    </div>
+                    <BannerWs></BannerWs>
 
                     <h4>Differenza tra <code>let</code> e <code>var</code></h4>
                     <br>
@@ -183,16 +149,8 @@ console.log(x); // Stampa 20 invece di 10</pre>
                     </p>
                     <br>
 
-                    <div class="card border-1 border-warning m-5 ">
-                        <h2 class="text-warning text-center p-4 mb-3">🚀 Fai
-                            pratica con
-                            <button class="rounded-5 sty_bt">
-                                <a href="https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_state_var"
-                                    target="_blank">W3S</a>
-                            </button>
+                    <BannerWs></BannerWs>
 
-                        </h2>
-                    </div>
                     <br>
                     <hr>
                     <br>
@@ -284,16 +242,7 @@ console.log(x); // Stampa 20 invece di 10</pre>
 
                     </p>
 
-                    <div class="card border-1 border-warning m-5 ">
-                        <h2 class="text-warning text-center p-4 mb-3">🚀 Fai
-                            pratica con
-                            <button class="rounded-5 sty_bt">
-                                <a href="https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_state_const_object"
-                                    target="_blank">W3S</a>
-
-                            </button>
-                        </h2>
-                    </div>
+                    <BannerWs></BannerWs>
 
                 </div>
             </div>
@@ -301,45 +250,8 @@ console.log(x); // Stampa 20 invece di 10</pre>
 
     </main>
 
-    <footer id="docum" class="rounded-4" style="background-color: rgb(87, 87, 87);">
-        <div class="container p-5">
-            <div class="row justify-content-center">
-                <h4 style="color:rgb(255, 191, 0)" class=" text-center p-4 mb-3">Prova a svolgere degli
-                    esercizi di logica JavaScript
-                    <button class="rounded-5 sty_bt">
-                        <a href="https://www.w3schools.com/js/exercise_js.asp?filename=exercise_js_variables1"
-                            target="_blank">W3S</a>
-                    </button>
-
-                </h4>
-                <div class="col-12 col-lg-6 mt-5">
-                    <div class>
-                        <h1>Link utili:</h1>
-                    </div>
-                </div>
-                <div class="col-12 col-lg-3 mt-5">
-                    <div class>
-                        <ul>
-                            <li>
-                                <h3><a href="https://www.w3schools.com/" target="_blank">w3schools</a></h3>
-                            </li>
-                            <li>
-                                <h3><a href="https://www.html.it/pag/45343/introduzione-a-javascript/"
-                                        target="_blank">HTML.it</a></h3>
-                            </li>
-                            <li>
-                                <h3><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
-                                        target="_blank">HTML.it</a></h3>
-                            </li>
-                        </ul>
-
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
-    </footer>
+    <BannerFooter></BannerFooter>
+    
 </template>
 
 <style scoped>
