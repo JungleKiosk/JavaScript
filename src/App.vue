@@ -8,7 +8,7 @@
  
   <h1 class="text-center" style="color: yellow;">JavaScript</h1>
 
-  <div class="container-fluid my-4 px-5">
+  <div class="container my-4 px-5">
     <div class="row">
       <div class="col-12 col-lg-12">
         <div class="links">

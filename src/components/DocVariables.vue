@@ -301,7 +301,7 @@ console.log(x); // Stampa 20 invece di 10</pre>
 
     </main>
 
-    <footer id="docum">
+    <footer id="docum" class="rounded-4" style="background-color: rgb(87, 87, 87);">
         <div class="container p-5">
             <div class="row justify-content-center">
                 <h4 style="color:rgb(255, 191, 0)" class=" text-center p-4 mb-3">Prova a svolgere degli
