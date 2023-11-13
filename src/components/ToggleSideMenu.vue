@@ -17,7 +17,7 @@ export default {
             this.neonEffect = !this.neonEffect;
         }, 3000);
     },
-};
+}; 
 
 </script>
 
