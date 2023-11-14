@@ -6,7 +6,7 @@
 
 <template>
 
-<footer id="docum" class="rounded-4" style="background-color: rgb(87, 87, 87);">
+<footer id="docum" class="rounded-4" style="background-color: rgba(119, 26, 102, 0.292);">
         <div class="container p-5">
             <div class="row justify-content-center">
                 <h4 style="color:rgb(255, 191, 0)" class=" text-center p-4 mb-3">Prova a svolgere degli
@@ -34,7 +34,7 @@
                             </li>
                             <li>
                                 <h3><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
-                                        target="_blank">HTML.it</a></h3>
+                                        target="_blank">Mdn web docs_</a></h3>
                             </li>
                         </ul>
 

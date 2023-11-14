@@ -17,17 +17,17 @@ export default {
             this.neonEffect = !this.neonEffect;
         }, 3000);
     },
-}; 
+};
 
 </script>
 
 
 <template>
-    <button class="toggle_sidebar_button btn btn-outline-light" @click="toggleSidebar"
+    <button class="toggle_sidebar_button btn_menu pulp" @click="toggleSidebar"
         :class="{ 'neon-effect': neonEffect }">menu</button>
 
     <nav class="sidebar" :class="{ 'sidebar-open': isSidebarOpen }">
-        <div class="row align-items-center">
+        <div class="row align-items-center ">
             <div class="col-6 col-lg-8">
                 <h1 class="p-3">menu</h1>
             </div>
@@ -46,8 +46,16 @@ export default {
 </template>
 
 <style>
-.sidebar ul {
+.sidebar,
+.sidebar ul,
+.sidebar a {
     list-style-type: none;
+    font-family: monospace;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: #ffbf00;
 }
 
 .sidebar {
@@ -57,18 +65,21 @@ export default {
     top: 0;
     bottom: 0;
     left: -100%;
-    /* Nasconde la sidebar di default */
     overflow-y: auto;
     transition: left 0.3s ease;
+    z-index: 1000;
+    /* Valore più alto di quello delle card */
 }
+
 
 .sidebar-open {
     left: 0;
     /* Mostra la sidebar quando è aperta */
 }
 
+
 .toggle_sidebar_button {
-    font-size: 20px;
+    font-weight: bold;
     cursor: pointer;
     position: fixed;
     top: 20px;
@@ -77,29 +88,40 @@ export default {
     display: flex;
     align-items: center;
     background-color: #27272a;
-    padding: 10px;
-    border-radius: 5px;
+    color: #ffbf00;
+    border: 1px solid #ffbf00;
+    border-radius: 10px;
     overflow-x: inherit;
 }
 
-.neon-effect {
-    animation: neon 1s ease-in-out infinite alternate;
+.toggle_sidebar_button:hover{
+    background-color: #ffbf00;
+    color: #27272a;
+    border: white;
 }
 
-@keyframes neon {
+
+.pulp {
+    padding: 10px 20px;
+    cursor: pointer;
+    animation: pulper 3s infinite ease-in-out;
+    /*transition: background-color 0.3s ease, color 0.3s ease; */
+}
+
+@keyframes pulper {
     0% {
-        text-shadow: 0 0 10px #77ff00,
-            0 0 20px #1aff00,
-            0 0 30px #00ff4c;
+        transform: scale(1);
+        /* Stato normale */
+    }
+
+    50% {
+        transform: scale(1.1);
+        /* Stato ingrandito */
     }
 
     100% {
-        text-shadow: 0 0 10px #00ffcc,
-            0 0 20px #00ffee,
-            0 0 30px #00aaff,
-            0 0 40px #00aeff,
-            0 0 50px rgba(255, 0, 191, 0.555);
+        transform: scale(1);
+        /* Ritorna allo stato normale */
     }
-
 }
 </style>

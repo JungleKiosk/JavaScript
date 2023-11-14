@@ -6,7 +6,7 @@ import BannerFooter from "../components/BannerFooter.vue"
 
 export default {
     data() {
-        
+
     },
     components: {
         BannerWs,
@@ -17,61 +17,35 @@ export default {
 
 
 <template>
-    <header id="docum">
-
-        <div class="container mt-5">
-            <div class="row justify-content-center">
-                <div class="col-12 col-lg-8">
-                    <div class="card p-3 d-flex justify-content-between align-items-center">
-                        <img class="rounded-3" width="100" src="../assets/img/js.svg" alt>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-
-
-    </header>
-
     <main id="docum">
 
         <div class="container">
 
             <div class="row justify-content-around">
 
-
                 <div class="col-12 col-lg-8">
                     <br>
                     <br>
                     <!-- variabili -->
-                    <h2 style="color:rgb(255, 191, 0)">Le variabili</h2>
+                    <h2 style="color:rgb(255, 191, 0)">Tipi di Dati in Javascript</h2>
                     <br>
-                    <p>Le variabili sono uno dei concetti fondamentali nella
-                        programmazione
-                        JavaScript. <br>
-                        In JavaScript, una variabile è paragonabile a un
-                        contenitore che può
-                        contenere dati come numeri, stringhe, oggetti e
-                        altro
-                        ancora. Le
-                        variabili sono fondamentali perché consentono di
-                        memorizzare e
-                        manipolare dati nel codice.</p>
+                    <p>In JavaScript, i tipi di dati giocano un ruolo fondamentale nel determinare il tipo di valore che una
+                        variabile può contenere. A differenza di alcuni linguaggi di programmazione che richiedono la
+                        dichiarazione esplicita dei tipi, JavaScript è un linguaggio a tipizzazione dinamica. Ciò significa
+                        che non è necessario dichiarare il tipo di una variabile prima di utilizzarla. In questa lezione,
+                        esploreremo i diversi tipi di dati disponibili in JavaScript e analizzeremo ciascuno di essi con
+                        esempi pratici.</p>
 
-                    <h4>Utilizzo <code>let</code> </h4>
+                    <h4>Tipi di Dati Primitivi</h4>
                     <br>
-                    <p>La dichiarazione delle variabili con <code class="code_txt">let</code> è
-                        una pratica
-                        moderna e
-                        consigliata in JavaScript. <code class="code_txt">let</code>
-                        limita la
-                        visibilità
-                        della variabile
-                        alla sola <a href="https://www.w3schools.com/js/js_scope.asp"
-                            style="color:rgb(255, 191, 0)">scope</a>
-                        in cui è stata dichiarata. Ad esempio:</p>
+                    <p>JavaScript è un linguaggio flessibile in termini di tipi di dati. Ecco alcuni dei tipi di dati
+                        primitivi disponibili:</p>
 
-                    <pre class="pannel_code">let age = 25; // Dichiarazione di una variabile "age" con valore 25</pre>
+                    <h3>Numero:</h3>
+                    <p>Rappresenta valori numerici, sia interi che decimali.</p>
+
+                    <pre class="pannel_code">let age = 25; // Numero intero
+let height = 175.5; // Numero decimale</pre>
 
                     <h4>Cambiare il Valore di una Variabile</h4>
                     <br>
@@ -248,9 +222,6 @@ console.log(x); // Stampa 20 invece di 10</pre>
     </main>
 
     <BannerFooter></BannerFooter>
-    
 </template>
 
-<style scoped>
-
-</style>
+<style scoped></style>
