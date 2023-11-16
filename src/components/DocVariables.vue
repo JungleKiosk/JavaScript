@@ -40,7 +40,7 @@ export default {
             <div class="row justify-content-around">
 
 
-                <div class="col-12 col-lg-8">
+                <div  id="variabili" class="col-12 col-lg-8">
                     <br>
                     <br>
                     <!-- variabili -->

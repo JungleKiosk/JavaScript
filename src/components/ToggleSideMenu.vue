@@ -1,5 +1,4 @@
 <script>
-
 export default {
     data() {
         return {
@@ -11,6 +10,12 @@ export default {
         toggleSidebar() {
             this.isSidebarOpen = !this.isSidebarOpen;
         },
+        scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        },
     },
     mounted() {
         setInterval(() => {
@@ -18,15 +23,20 @@ export default {
         }, 3000);
     },
 };
-
 </script>
 
 
+
 <template>
-    <button class="toggle_sidebar_button btn_menu pulp" @click="toggleSidebar"
-        :class="{ 'neon-effect': neonEffect }">menu</button>
+    <button class="toggle_sidebar_button btn_menu pulp" @click="toggleSidebar" :class="{ 'neon-effect': neonEffect }">menu
+    </button>
+
+    <a href="#" class="scroll-to-top upper_arrow" @click="scrollToTop">
+        <i class="fas fa-arrow-up">Go up</i>
+    </a>
 
     <nav class="sidebar" :class="{ 'sidebar-open': isSidebarOpen }">
+
         <div class="row align-items-center ">
             <div class="col-6 col-lg-8">
                 <h1 class="p-3">menu</h1>
@@ -35,13 +45,15 @@ export default {
                 <button class="btn btn-outline-light " @click="toggleSidebar">x</button>
             </div>
         </div>
+
         <ul class="p-3">
-            <li><a href="#variabili">variabili e costanti</a></li>
+            <li><a href="#variabili">Variabili e costanti</a></li>
             <hr>
-            <li><a href="#">Lorem, ipsum dolor</a></li>
+            <li><a href="#tipididati">Tipi di dati</a></li>
             <hr>
-            <li><a href="#">Lorem, ipsum dolor</a></li>
+            <li><a href="#casting">Casting</a></li>
         </ul>
+
     </nav>
 </template>
 
@@ -53,7 +65,7 @@ export default {
     font-family: monospace;
 }
 
-.sidebar a {
+a {
     text-decoration: none;
     color: #ffbf00;
 }
@@ -77,6 +89,20 @@ export default {
     /* Mostra la sidebar quando è aperta */
 }
 
+.upper_arrow {
+    font-weight: bold;
+    font-size: large;
+    cursor: pointer;
+    position: fixed;
+    top: 80px;
+    right: 25px;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    color: #ffbf00;
+    overflow-x: inherit;
+}
+
 
 .toggle_sidebar_button {
     font-weight: bold;
@@ -94,7 +120,7 @@ export default {
     overflow-x: inherit;
 }
 
-.toggle_sidebar_button:hover{
+.toggle_sidebar_button:hover {
     background-color: #ffbf00;
     color: #27272a;
     border: white;

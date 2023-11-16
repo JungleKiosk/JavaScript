@@ -6,7 +6,7 @@
 
 <template>
  
-  <h1 class="text-center" style="color: yellow;">JavaScript</h1>
+  <h1 class="text-center" style="font-family: monospace; font-weight: bold; color: #ffbf00;">JavaScript</h1>
 
   <div class="container my-4 px-5">
     <div class="row">

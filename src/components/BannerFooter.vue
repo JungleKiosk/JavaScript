@@ -5,8 +5,7 @@
 
 
 <template>
-
-<footer id="docum" class="rounded-4" style="background-color: rgba(119, 26, 102, 0.292);">
+    <footer id="docum" class="rounded-4" style="background-color: rgba(119, 26, 102, 0.292);">
         <div class="container p-5">
             <div class="row justify-content-center">
                 <h4 style="color:rgb(255, 191, 0)" class=" text-center p-4 mb-3">Prova a svolgere degli
@@ -22,7 +21,7 @@
                         <h1>Link utili:</h1>
                     </div>
                 </div>
-                <div class="col-12 col-lg-3 mt-5">
+                <div class="col-12 col-lg-6 mt-5">
                     <div class>
                         <ul>
                             <li>
@@ -33,19 +32,22 @@
                                         target="_blank">HTML.it</a></h3>
                             </li>
                             <li>
-                                <h3><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
-                                        target="_blank">Mdn web docs_</a></h3>
+                                <h3><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">Mdn
+                                        web docs_</a></h3>
                             </li>
+                            <li>
+                                <h3><a href="https://www.dofactory.com/javascript" target="_blank">dofactory</a></h3>
+                            </li>
+
                         </ul>
 
                     </div>
                 </div>
-
+                
             </div>
         </div>
 
     </footer>
-    
 </template>
 
 <style></style>

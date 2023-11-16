@@ -2,6 +2,7 @@
 import DocVariables from "../components/DocVariables.vue"; // Sostituisci con il percorso corretto del tuo componente
 import ToggleSideMenu from "../components/ToggleSideMenu.vue"
 import DocTipiDati from "../components/DocTipiDati.vue"
+import DocCasting from "./DocCasting.vue";
 
 
 export default {
@@ -9,10 +10,11 @@ export default {
 
     },
     components: {
-        DocVariables,
-        ToggleSideMenu,
-        DocTipiDati
-    }
+    DocVariables,
+    ToggleSideMenu,
+    DocTipiDati,
+    DocCasting
+}
 }
 
 
@@ -28,10 +30,12 @@ export default {
 
             </header>
 
-            <section id="variabili">
+            <section>
                 <ToggleSideMenu></ToggleSideMenu>
                 <DocVariables></DocVariables>
                 <DocTipiDati></DocTipiDati>
+                <DocCasting></DocCasting>
+                
             </section>
 
         </main>

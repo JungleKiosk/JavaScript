@@ -10,11 +10,11 @@
 
             <div class="row justify-content-around">
 
-                <div id="tipididati" class="col-12 col-lg-8">
+                <div id="casting" class="col-12 col-lg-8">
                     <br>
                     <br>
                     <!-- variabili -->
-                    <h2 style="color:rgb(255, 191, 0)">Tipi di Dati in JavaScript</h2>
+                    <h2 style="color:rgb(255, 191, 0)">Casting</h2>
                     <br>
                     <p>In JavaScript, i tipi di dati giocano un ruolo fondamentale nel determinare il tipo di valore che una
                         variabile può contenere. A differenza di alcuni linguaggi di programmazione che richiedono la
