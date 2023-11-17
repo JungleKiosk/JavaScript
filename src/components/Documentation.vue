@@ -4,6 +4,8 @@ import ToggleSideMenu from "../components/ToggleSideMenu.vue"
 import DocTipiDati from "../components/DocTipiDati.vue"
 import DocCasting from "./DocCasting.vue";
 import DocOutput from "./DocOutput.vue";
+import DocNumbers from "./DocNumbers.vue";
+
 
 
 export default {
@@ -15,7 +17,8 @@ export default {
     ToggleSideMenu,
     DocTipiDati,
     DocCasting,
-    DocOutput
+    DocOutput,
+    DocNumbers
 }
 }
 
@@ -38,7 +41,7 @@ export default {
                 <DocTipiDati></DocTipiDati>
                 <DocCasting></DocCasting>
                 <DocOutput></DocOutput>
-                
+                <DocNumbers></DocNumbers>                
             </section>
 
         </main>
