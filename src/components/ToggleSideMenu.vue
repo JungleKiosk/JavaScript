@@ -47,19 +47,19 @@ export default {
         </div>
 
         <ul class="p-3">
-            <li><a href="#variabili">Variabili</a></li>
+            <li><a class="ancor_menu" href="#variabili">Variabili</a></li>
             <hr>
-            <li><a href="#tipididati">Tipi di dati</a></li>
+            <li><a class="ancor_menu" href="#tipididati">Tipi di dati</a></li>
             <hr>
-            <li><a href="#casting">Casting</a></li>
+            <li><a class="ancor_menu" href="#casting">Casting</a></li>
             <hr>
-            <li><a href="#output">Output</a></li>
+            <li><a class="ancor_menu" href="#output">Output</a></li>
             <hr>
-            <li><a href="#numbers">Numbers</a></li>
+            <li><a class="ancor_menu" href="#numbers">Numbers</a></li>
             <hr>
-            <li><a href="#math">Math</a></li>
+            <li><a class="ancor_menu" href="#math">Math</a></li>
             <hr>
-            <li><a href="#booleaner">Booleaner</a></li>
+            <li><a  href="#booleaner">Booleaner</a></li>
         </ul>
 
     </nav>
@@ -78,11 +78,11 @@ a {
     color: #ffbf00;
 }
 
-a:hover{
-    color: rgb(0, 0, 0);
-    background-color: #ffbf00;
+li a:hover{
+    color: rgb(207, 207, 207);
+    background-color: #ffbf0066;
     border-radius: 20px;
-    padding: 3px;
+    padding: 5px;
 }
 
 .sidebar {
