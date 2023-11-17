@@ -6,8 +6,7 @@ import DocCasting from "./DocCasting.vue";
 import DocOutput from "./DocOutput.vue";
 import DocNumbers from "./DocNumbers.vue";
 import DocMath from "./DocMath.vue";
-
-
+import DocBoolean from "./DocBoolean.vue";
 
 export default {
     data() {
@@ -20,7 +19,8 @@ export default {
     DocCasting,
     DocOutput,
     DocNumbers,
-    DocMath
+    DocMath,
+    DocBoolean
 }
 }
 
@@ -44,7 +44,8 @@ export default {
                 <DocCasting></DocCasting>
                 <DocOutput></DocOutput>
                 <DocNumbers></DocNumbers>
-                <DocMath></DocMath>               
+                <DocMath></DocMath>
+                <DocBoolean></DocBoolean>
             </section>
 
         </main>

@@ -47,7 +47,7 @@ export default {
         </div>
 
         <ul class="p-3">
-            <li><a href="#variabili">Variabili e costanti</a></li>
+            <li><a href="#variabili">Variabili</a></li>
             <hr>
             <li><a href="#tipididati">Tipi di dati</a></li>
             <hr>
@@ -58,6 +58,8 @@ export default {
             <li><a href="#numbers">Numbers</a></li>
             <hr>
             <li><a href="#math">Math</a></li>
+            <hr>
+            <li><a href="#booleaner">Booleaner</a></li>
         </ul>
 
     </nav>
@@ -74,6 +76,13 @@ export default {
 a {
     text-decoration: none;
     color: #ffbf00;
+}
+
+a:hover{
+    color: rgb(0, 0, 0);
+    background-color: #ffbf00;
+    border-radius: 20px;
+    padding: 3px;
 }
 
 .sidebar {
