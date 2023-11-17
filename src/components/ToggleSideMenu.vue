@@ -52,6 +52,8 @@ export default {
             <li><a href="#tipididati">Tipi di dati</a></li>
             <hr>
             <li><a href="#casting">Casting</a></li>
+            <hr>
+            <li><a href="#output">Output</a></li>
         </ul>
 
     </nav>
