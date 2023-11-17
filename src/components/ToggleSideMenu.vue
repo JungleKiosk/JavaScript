@@ -72,7 +72,7 @@ a {
 
 .sidebar {
     width: auto;
-    background-color: #27272a;
+    background-color: #020215ca;
     position: fixed;
     top: 0;
     bottom: 0;

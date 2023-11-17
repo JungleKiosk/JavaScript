@@ -16,122 +16,87 @@
                     <!-- variabili -->
                     <h2 style="color:rgb(255, 191, 0)">Casting</h2>
                     <br>
-                    <p>In JavaScript, i tipi di dati giocano un ruolo fondamentale nel determinare il tipo di valore che una
-                        variabile può contenere. A differenza di alcuni linguaggi di programmazione che richiedono la
-                        dichiarazione esplicita dei tipi, JavaScript è un linguaggio a tipizzazione dinamica. Ciò significa
-                        che non è necessario dichiarare il tipo di una variabile prima di utilizzarla. In questa lezione,
-                        esploreremo i diversi tipi di dati disponibili in JavaScript e analizzeremo ciascuno di essi con
-                        esempi pratici.</p>
+                    <p>In JavaScript, la conversione dei tipi di dati è un processo cruciale quando si lavora con valori di
+                        natura diversa. <br>
+                        Esistono due tipi principali di conversione: <br>
+                        la conversione implicita e la
+                        conversione esplicita. In questa lezione, esploreremo entrambi i tipi di conversione attraverso una
+                        serie di esempi pratici.</p>
 
-                    <h4>Tipi di Dati Primitivi</h4>
+                    <h4>Conversione Implicita</h4>
                     <br>
-                    <p>JavaScript è un linguaggio flessibile in termini di tipi di dati. Ecco alcuni dei tipi di dati
-                        primitivi disponibili:</p>
+                    <p>La conversione implicita dei tipi di dati avviene automaticamente quando si utilizzano insieme
+                        valori di tipi diversi in un’operazione. JavaScript cerca di adattare i tipi in modo da renderli
+                        compatibili per l’operazione in questione. Questo può comportare la conversione di un tipo in un
+                        altro al fine di eseguire l’operazione desiderata. Ecco alcuni esempi di conversione implicita:</p>
 
-                    <h3>Numero:</h3>
-                    <p>Rappresenta valori numerici, sia interi che decimali.</p>
+                    <pre class="pannel_code">let age = 25; // Valore di tipo numero intero
+let ageAsString = "La mia età è: " + age; // Conversione implicita a stringa
+console.log(ageAsString); // Stampa: "La mia età è: 25"</pre>
 
-                    <pre class="pannel_code">let age = 25; // Numero intero
-let height = 175.5; // Numero decimale</pre>
+                    <pre class="pannel_code">let total = 10 + "5"; // Conversione implicita a stringa
+console.log(total); // Stampa: "105"</pre>
 
-                    <h3>Stringhe:</h3>
-                    <p>Rappresenta sequenze di caratteri all’interno di apici singoli o doppi.</p>
-
-                    <pre class="pannel_code">let name = "JavaScript"; // Stringa con apici doppi
-let message = "Hello, JavaScript!"; // Stringa con apici singoli</pre>
-
-                    <h3>Booleano:</h3>
-                    <p>Rappresenta un valore di verità, che può essere true o false.</p>
-
-                    <pre class="pannel_code">let isStudent = true; // Valore booleano vero
-let isAdmin = false; // Valore booleano falso</pre>
-
-                    <h3>Null:</h3>
-                    <p>Rappresenta un valore nullo o non esistente.</p>
-
-                    <pre class="pannel_code">let emptyValue = null; // Valore nullo</pre>
-
-                    <h3>Undefined:</h3>
-                    <p>Rappresenta una variabile dichiarata ma non inizializzata.</p>
-
-                    <pre class="pannel_code">let undefinedValue; // Valore undefined</pre>
-
-                    <h3>Simbolo:</h3>
-                    <p>Rappresenta un identificatore unico, introdotto in ECMAScript 6.</p>
-
-                    <pre class="pannel_code">const symbol = Symbol("description"); // Dichiarazione di un simbolo</pre>
-
-                    <div class="card border-1 border-warning m-5 ">
-                        <h2 class="text-warning text-center p-4 mb-3">🚀 Fai
-                            pratica
-                            con
-                            <button class="rounded-5 sty_bt"><a
-                                    href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_datatypes_typeof_primitive"
-                                    target="_blank">W3S</a></button>
-
-                        </h2>
-                    </div>
-
-                    <h4>Tipi di Dati di Riferimento</h4>
+                    <h4>Conversione Esplicita</h4>
                     <br>
-                    <p>Oltre ai tipi di dati primitivi, JavaScript offre anche tipi di dati di riferimento, che includono
-                        oggetti, array, funzioni e altro ancora.</p>
+                    <p>La conversione esplicita richiede l’intervento dello sviluppatore e viene eseguita tramite funzioni e
+                        operatori specifici. Questo tipo di conversione è utile quando si desidera forzare un valore da un
+                        tipo a un altro in modo controllato. Ecco alcuni esempi di conversione esplicita:</p>
 
-                    <h3>Oggetti:</h3>
-                    <p>Rappresentano collezioni di proprietà e metodi.</p>
+                    <pre class="pannel_code">let numberString = "123";
+let number = Number(numberString); // Conversione esplicita a numero
+console.log(number); // Stampa: 123</pre>
 
-                    <pre class="pannel_code">let person = { name: "John", age: 30 }; // Dichiarazione di un oggetto</pre>
+                    <pre class="pannel_code">let stringNumber = String(456); // Conversione esplicita a stringa
+console.log(stringNumber); // Stampa: "456"</pre>
 
-                    <h3>Array:</h3>
-                    <p>Rappresenta una collezione ordinata di valori.</p>
+                    <h4>Conversione Esplicita con <code>parseInt</code> e <code>parseFloat</code></h4>
+                    <br>
+                    <p>
+                        Le funzioni <code class="code_txt">parseInt</code> e <code class="code_txt">parseFloat</code> sono
+                        comunemente utilizzate per
+                        convertire stringhe in numeri
+                        interi o decimali:
+                    </p>
+                    <br>
+                    <pre class="pannel_code">let intValue = parseInt("42"); // Conversione esplicita a numero intero
+console.log(intValue); // Stampa: 42
 
-                    <pre class="pannel_code">let numbers = [1, 2, 3, 4, 5]; // Dichiarazione di un array</pre>
+let floatValue = parseFloat("3.14"); // Conversione esplicita a numero decimale
+console.log(floatValue); // Stampa: 3.14</pre>
 
-                    <h3>Funzioni:</h3>
-                    <p>Rappresentano blocchi di codice che possono essere richiamati.</p>
+                    <h4>Conversione Esplicita con <code>toString</code></h4>
+                    <br>
+                    <p> Il metodo <code class="code_txt">toString</code>
+                        permette di convertire un valore in una stringa:
+                    </p>
+                    <br>
+                    <pre class="pannel_code">let number = 123;
+let numberString = number.toString(); // Conversione esplicita a stringa
+console.log(numberString); // Stampa: "123"</pre>
 
-                    <pre class="pannel_code">function greet(name) {
-  return "Ciao, " + name + "!";
-}</pre>
-
-                    <h3>Date:</h3>
-                    <p>Rappresenta date e orari.</p>
-
-                    <pre class="pannel_code">let currentDate = new Date(); // Oggetto Data corrente</pre>
-
-                    <h3>RegExp:</h3>
-                    <p>Rappresenta espressioni regolari per il matching di test</p>
-
-                    <pre class="pannel_code">let pattern = /[A-Za-z]+/; // Espressione regolare per le parole</pre>
-
-                    <div class="card border-1 border-warning m-5 ">
-                        <h2 class="text-warning text-center p-4 mb-3">🚀 Fai
-                            pratica
-                            con
-                            <button class="rounded-5 sty_bt"><a
-                                    href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_datatypes_typeof_complex"
-                                    target="_blank">W3S</a></button>
-
-                        </h2>
-                    </div>
+                    <h4>Conversione Esplicita con String Concatenation</h4>
+                    <br>
+                    <p>La concatenazione di un valore con una stringa provoca la conversione del valore in una stringa:
+                    </p>
+                    <br>
+                    <pre class="pannel_code">let number = 42;
+let string = "Il numero è: " + number; // Conversione esplicita a stringa
+console.log(string); // Stampa: "Il numero è: 42"</pre>
 
                     <h4>Conclusioni</h4>
                     <br>
-                    <p>
-                        I tipi di dati in JavaScript svolgono un ruolo essenziale nella manipolazione dei valori all’interno
-                        del codice. La flessibilità dei tipi di dati dinamici di JavaScript offre agilità nello sviluppo,
-                        consentendo di dichiarare variabili senza specificare esplicitamente il loro tipo. Dalla semplicità
-                        dei tipi primitivi alle complessità dei tipi di riferimento, una comprensione approfondita dei tipi
-                        di dati contribuisce alla scrittura di codice robusto ed efficace.
-                    </p>
-                    <br>
+                    <p>La conversione dei tipi di dati in JavaScript è un concetto fondamentale per manipolare valori di
+                        tipi differenti. La conversione implicita avviene automaticamente quando si eseguono operazioni tra
+                        tipi diversi, mentre la conversione esplicita richiede l’uso di funzioni e operatori per controllare
+                        la trasformazione dei valori. Comprendere l’effetto di entrambe le conversioni è essenziale per
+                        scrivere codice JavaScript coerente e affidabile.</p>
                 </div>
             </div>
         </div>
 
     </main>
 
-    <BannerFooter></BannerFooter>
 </template>
 
 <style scoped></style>
