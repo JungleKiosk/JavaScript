@@ -5,6 +5,7 @@ import DocTipiDati from "../components/DocTipiDati.vue"
 import DocCasting from "./DocCasting.vue";
 import DocOutput from "./DocOutput.vue";
 import DocNumbers from "./DocNumbers.vue";
+import DocMath from "./DocMath.vue";
 
 
 
@@ -18,7 +19,8 @@ export default {
     DocTipiDati,
     DocCasting,
     DocOutput,
-    DocNumbers
+    DocNumbers,
+    DocMath
 }
 }
 
@@ -41,7 +43,8 @@ export default {
                 <DocTipiDati></DocTipiDati>
                 <DocCasting></DocCasting>
                 <DocOutput></DocOutput>
-                <DocNumbers></DocNumbers>                
+                <DocNumbers></DocNumbers>
+                <DocMath></DocMath>               
             </section>
 
         </main>

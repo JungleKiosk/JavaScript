@@ -56,6 +56,8 @@ export default {
             <li><a href="#output">Output</a></li>
             <hr>
             <li><a href="#numbers">Numbers</a></li>
+            <hr>
+            <li><a href="#math">Math</a></li>
         </ul>
 
     </nav>
