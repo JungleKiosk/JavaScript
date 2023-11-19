@@ -212,7 +212,7 @@ console.log(x); // Stampa 20 invece di 10</pre>
                     <pre
                         class="pannel_code">const pi = 3.14159; <br>pi = 3.14; // ⚠️ Errore: Impossibile assegnare un nuovo valore a "pi"</pre>
 
-                    <h4>Best Practices per <code>const</code></h4>
+                    <h4>Best Practices</h4>
 
                     <p>
                     <ul>

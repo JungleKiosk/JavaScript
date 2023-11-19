@@ -60,6 +60,8 @@ export default {
             <li><a class="ancor_menu" href="#math">Math</a></li>
             <hr>
             <li><a  href="#booleaner">Booleaner</a></li>
+            <hr>
+            <li><a  href="#string">String</a></li>
         </ul>
 
     </nav>
@@ -79,10 +81,9 @@ a {
 }
 
 li a:hover{
-    color: rgb(207, 207, 207);
-    background-color: #ffbf0066;
-    border-radius: 20px;
-    padding: 5px;
+    color: rgba(218, 218, 218, 0.995);
+    border-bottom: 2px solid #ffbf0065;
+    
 }
 
 .sidebar {

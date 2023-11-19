@@ -5,9 +5,9 @@
 
 
 <template>
-    <footer id="docum" class="rounded-4" style="background-color: rgba(119, 26, 102, 0.292);">
+    <footer id="docum" class="rounded-4" >
         <div class="container p-5">
-            <div class="row justify-content-center">
+            <div class="row rounded-4 justify-content-center" style="background-color: rgba(119, 26, 102, 0.292);">
                 <h4 style="color:rgb(255, 191, 0)" class=" text-center p-4 mb-3">Prova a svolgere degli
                     esercizi di logica JavaScript
                     <button class="rounded-5 sty_bt">
@@ -16,12 +16,16 @@
                     </button>
 
                 </h4>
-                <div class="col-12 col-lg-6 mt-5">
+
+
+            </div>
+            <div class="row mt-5 justify-content-center">
+                <div class="col-12 col-lg-4 mt-5">
                     <div class>
                         <h1>Link utili:</h1>
                     </div>
                 </div>
-                <div class="col-12 col-lg-6 mt-5">
+                <div class="col-12 col-lg-4 mt-5">
                     <div class>
                         <ul>
                             <li>
@@ -43,7 +47,6 @@
 
                     </div>
                 </div>
-                
             </div>
         </div>
 

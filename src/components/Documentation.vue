@@ -7,6 +7,7 @@ import DocOutput from "./DocOutput.vue";
 import DocNumbers from "./DocNumbers.vue";
 import DocMath from "./DocMath.vue";
 import DocBoolean from "./DocBoolean.vue";
+import DocString from "./DocString.vue";
 
 export default {
     data() {
@@ -20,7 +21,8 @@ export default {
     DocOutput,
     DocNumbers,
     DocMath,
-    DocBoolean
+    DocBoolean,
+    DocString
 }
 }
 
@@ -46,6 +48,7 @@ export default {
                 <DocNumbers></DocNumbers>
                 <DocMath></DocMath>
                 <DocBoolean></DocBoolean>
+                <DocString></DocString>
             </section>
 
         </main>
